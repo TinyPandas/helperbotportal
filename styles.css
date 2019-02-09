@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    margin: 0px;
+}
+
+header {
+	background-color:rgb(85,85,85);
+	padding: 30px;
+	text-align: center;
+	font-size: 35px;
+	color: white;
+}
+
+nav {
+	float: left;
+	width: 100%;
+	background:rgb(35,35,35);
+	padding-top: 10px;
+	padding-left: 20px;
+	color: white;
+}
+
+nav.left {
+	float: left;
+	height: 300px;
+	width: 20%;
+	background:rgb(35,35,35);
+	padding-top: 20px;
+	padding-left: 10px;
+	color: white;
+	overflow: auto;
+	display: block;
+}
+
+nav.right {
+	float: right;
+	height: 300px;
+	width: 20%;
+	background:rgb(35,35,35);
+	padding-top: 20px;
+	padding-left: 10px;
+	color: white;
+	overflow: auto;
+}
+
+nav.main {
+	
+}
+
+button {
+	width: 95%;
+	padding: 10px;
+	background:rgb(100,75,90);
+}
+
+nav ul {
+	list-style-type: none;
+	padding-left: 5px;
+}
+
+nav ul li {
+	display: inline-block;
+	padding-right: 10px;
+}
+
+body {
+	background-color:rgb(15,15,15);
+}
+
+article {
+	float: left;
+	width: 100%;
+	height: 300px;
+	background-color: #f1f1f1;
+	padding-top: 10px;
+	padding-left: 20px;
+}
+
+article.body {
+	float: left;
+	width: 80%;
+	height: 300px;
+	background-color: #f1f1f1;
+}
+
+section:after {
+	content: "";
+	display: inline;
+	clear: both;
+}
+
+footer {
+	background-color:rgb(85,85,85);
+	padding: 30px;
+	font-size: 15px;
+	color: white;
+}
+
+iframe {
+	height: 99%;
+	width: 99%;
+}
+
+p.head {
+	font-size: 20px;
+}
+
+p.body {
+	font-size: 15px;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
