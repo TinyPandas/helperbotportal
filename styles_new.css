@@ -122,12 +122,42 @@ embed {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	text-align: middle;
-	background-color: #2ee1e8;
-	color: #3a3d42;
+	background-color: #4CAF50;
+	color: white;
 }
 
 #commands td, #commands tr, #commands th {
 	border: 1px solid black;
+}
+
+#commandlog {
+	border-collapse: collapse;
+	width: 100%;
+	text-align: left;
+}
+
+#commandlog th {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: middle;
+	background-color: #4CAF50;
+	color: white;
+}
+
+#commandlog td, #commandlog tr, #commandlog th {
+	border: 1px solid black;
+}
+
+.table {
+	display: table;
+}
+
+form.tr, .tr {
+	display: table-row;
+}
+
+span.td {
+	display: table-cell;
 }
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
