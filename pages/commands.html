@@ -2,26 +2,50 @@
 	<head>
 		<title> commands </title>
 		<meta charset = "utf-8" name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="../styles.css">
-		<script src="../buttons.js"></script>
+		<link rel="stylesheet" href="../styles_new.css">
 	</head>
-	<article>
-		<h2> Commands </h2>
-		<ol>
-			<li> Help </li>
-			<ul class="bulletlist">
-				<li> Desciption: Lists all of the commands available, and provides a brief description. If arguments provided, will provide an in-depth description of the command. </li>
-				<li> Aliases: help | cmds | commands </li>
-				<li> Arguments: [optional...] commandName </li>
-				<li> Usage: $help [commandName1] [commandName2] [...] </li>
-			</ul>
-			<li> Ping </li>
-			<ul class="bulletlist">
-				<li> Description: Checks the latency of HelperBot </li>
-				<li> Aliases: pong </li>
-				<li> Arguments: None </li>
-				<li> Usage: $ping | $pong </li>
-			</ul
-		</ol>
-	</article>
+	<body>
+		<div class="row">
+			<div class="leftcolumn" style="width:100%;">
+				<h1> Commands </h1>
+				<table id="commands">
+					<tr>
+						<th> Command </th>
+						<th> Description </th>
+						<th> Aliases </th>
+						<th> Arguments </th>
+						<th> Usage </th>
+					</tr>
+					<tr>
+						<td> Help </td>
+						<td> Lists all of the available commands, and provides a brief description. </td>
+						<td> cmds | commands </td>
+						<td> [optional...] commandName </td>
+						<td> $help [commandName1] [commandName2] [...] </td>
+					</tr>
+					<tr>
+						<td> Ping </td>
+						<td> Checks the latency of HelperBot </td>
+						<td> pong </td>
+						<td> None </td>
+						<td> $ping </td>
+					</tr>
+					<tr>
+						<td> Lua </td>
+						<td> Compiles and Executes Lua Scripts </td>
+						<td> None </td>
+						<td> {required} scriptSource </td>
+						<td> $lua {scriptSource} </td>
+					</tr>
+					<tr>
+						<td> LaTeX </td>
+						<td> LaTeX interpreter </td>
+						<td> None </td>
+						<td> {required} latexFunctions </td>
+						<td> $tex {latexFunctions} </td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</body>
 </html>

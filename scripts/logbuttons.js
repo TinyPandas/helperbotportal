@@ -1,6 +1,12 @@
+function reqListener () {
+  console.log(this.responseText);
+}
+
 function update(src) {
 	console.log(src);
-	document.getElementById("log-page").src = src;
+	var doc = document.getElementById("log-embed");
+	doc.src = src;
+	console.log(doc.src);
 }
 
 function version(id) {

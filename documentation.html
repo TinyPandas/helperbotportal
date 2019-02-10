@@ -3,26 +3,32 @@
 	<head>
 		<title> HelperBot Docs </title>
 		<meta charset = "utf-8" name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="styles_new.css">
 		<script src="./scripts/docbuttons.js"></script>
 	</head>
 	<body>
-		<header>
+		<div class="header">
 			<h1> HelperBot Documentation </h1>
-		</header>
-		<section>
-			<nav>
-				<ul>
-					<li><a href="./index.html">Index</a></li>
-					<li><a href="./changelog.html">Changelog</a></li>
-				</ul>
-			</nav>
-			<nav class="left">
-				<button onclick="commands()">Commands</button>
-			</nav>
-			<article class="body"> 
-				<iframe id="doc-page" src="pages/info.html"/>
-			</article>
-		</section>
+			<p><b> Live Version: 1.0 </b></p>
+		</div>
+		<div class="topnav">
+			<a href="./index.html">Home</a>
+			<a href="./changelog.html">Changelog</a>
+		</div>
+		<div class="row">
+			<div class="rightcolumn">
+				<div class="card">
+					<button onclick="commands()">Commands</button>
+				</div>
+			</div>
+			<div class="leftcolumn" style="padding-left:20px;height:auto;">
+				<div class="card">
+					<embed id="doc-page" type="text/html" src="pages/info.html"/>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<h4> This page is maintained and owned by {name}. This page, and it's owner, has no affiliation with Roblox. </h4>
+		</div>
 	</body>
 </html>
