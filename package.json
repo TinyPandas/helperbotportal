@@ -3,7 +3,9 @@
 	"version": "1.0.0",
 	"description": "Main site for HelperBot",
 	"main": "node.js",
-	"script": {},
+	"script": {
+		"start": "node.js"
+	},
 	"keywords": [],
 	"author": "Christopher Barwick",
 	"license": "GPL-3.0",
