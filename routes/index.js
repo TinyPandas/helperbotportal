@@ -1,13 +1,13 @@
-var http = require('http');
-var url = require('url');
+var express = require('express');
+var router = express.Router();
 var fs = require('fs');
 var path = require('path');
 
-http.createServer(function (req, res) {
+/* GET home page. */
+router.get('/', function(req, res, next) {
 	if (req.url === "/") {
-		fs.readFile("./index.html", "UTF-8", function (err, html) {
+		fs.readFile('index.html', "UTF-8", function (err, html) {
 			res.writeHead(200, {"Content-Type": "text/html"});
-			res.end(html);
 		});
 	} else if(req.url.match("\.css$")) {
 		var cssPath = path.join(__dirname, '', req.url);
@@ -25,4 +25,6 @@ http.createServer(function (req, res) {
 			}
 		});
 	}
-}).listen(80);
+});
+
+module.exports = router;

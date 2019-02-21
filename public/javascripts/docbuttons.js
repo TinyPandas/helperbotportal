@@ -3,5 +3,5 @@ function update(src) {
 }
 
 function commands() {
-	update("./pages/commands.html");
+	update("/docs/commands.html");
 }

@@ -4,5 +4,5 @@ function update(src) {
 }
 
 function version(id) {
-	update("./logs/" + id + ".html");
+	update("/logs/" + id + ".html");
 }
