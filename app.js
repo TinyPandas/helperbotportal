@@ -46,6 +46,10 @@ app.get('/logs/1.1.html', function (req, res) {
 	res.render('logs/1.1.html');
 });
 
+app.get('/logs/2.0.html', function (req, res) {
+	res.render('logs/2.0.html');
+});
+
 app.get('/docs/info.html', function (req, res) {
 	res.render('docs/info.html');
 });
